@@ -15,7 +15,7 @@ fi
 APP_BASE="$(cat "${ENV_DIR}/APP_BASE")"
 
 (
-    cp -R "${BUILD_DIR}/${APP_BASE}/" "${BUILD_DIR}"
+    cp -vR "${BUILD_DIR}/${APP_BASE}/" "${BUILD_DIR}"
 )
 
 if [ $? -ne 0 ]; then
